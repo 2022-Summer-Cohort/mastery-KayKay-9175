@@ -2,9 +2,12 @@ package com.survivingcodingbootcamp.blog.controller;
 
 import com.survivingcodingbootcamp.blog.repository.HashtagRepository;
 import com.survivingcodingbootcamp.blog.repository.PostRepository;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+@Controller
+@RequestMapping("/hashtags")
 
 public class HashtagController {
     private HashtagRepository hashtagRepo;
